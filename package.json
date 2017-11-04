@@ -1,0 +1,35 @@
+{
+  "name": "sketchapp-kit",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d dist",
+    "build:watch": "babel --watch src -d dist",
+    "flow": "flow",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "standard 'src/**/*.js'",
+    "format": "prettier-standard 'src/**/*.js'"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-react-native": "^4.0.0",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "flow-bin": "^0.58.0",
+    "jest": "^21.2.1",
+    "prettier-standard": "^7.0.3",
+    "standard": "^10.0.3"
+  },
+  "standard": {
+    "plugins": [
+      "flowtype"
+    ],
+    "parser": "babel-eslint"
+  },
+  "dependencies": {
+    "sketchapp-json-flow-types": "^0.2.0"
+  }
+}
